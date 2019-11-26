@@ -1,6 +1,6 @@
 {
   "name": "evergreen-ui",
-  "version": "4.21.5",
+  "version": "4.19.3",
   "description": "🌲 React UI Kit by Segment 🌲",
   "contributors": [
     "Jeroen Ransijn (https://jssr.design/)",
@@ -17,11 +17,9 @@
   "license": "MIT",
   "main": "commonjs/index.js",
   "module": "esm/index.js",
-  "types": "index.d.ts",
   "files": [
     "commonjs",
-    "esm",
-    "index.d.ts"
+    "esm"
   ],
   "sideEffects": false,
   "scripts": {
@@ -46,7 +44,6 @@
   "dependencies": {
     "@babel/runtime": "^7.1.2",
     "@blueprintjs/icons": "^3.2.0",
-    "@types/react": "^16.9.5",
     "arrify": "^1.0.1",
     "classnames": "^2.2.6",
     "dom-helpers": "^3.2.1",
@@ -60,11 +57,11 @@
     "react-tiny-virtual-list": "^2.1.4",
     "react-transition-group": "^2.5.0",
     "tinycolor2": "^1.4.1",
-    "ui-box": "^2.1.2"
+    "ui-box": "^1.4.0"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
@@ -159,17 +156,6 @@
     "semi": false,
     "singleQuote": true
   },
-  "lint-staged": {
-    "*.js": [
-      "xo --fix",
-      "prettier --write",
-      "git add"
-    ],
-    "*.{json,md}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
   "ava": {
     "files": [
       "**/test/**/*.js"
@@ -182,12 +168,7 @@
   "size-limit": [
     {
       "path": "commonjs/index.js",
-      "limit": "212 KB"
+      "limit": "210 KB"
     }
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  }
+  ]
 }
